@@ -8,10 +8,15 @@ public class AshghalSubmissions {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Id;
+    @Column(nullable = false)
     private String projectId;
+    @Column(nullable = false)
     private String contractId;
+    @Column(nullable = false,unique = true)
     private String submissionId;
+    @Column(nullable = false)
     private String submissionFolderPath;
+    @Column(nullable = false)
     private String manifestFilePath;
 
     public AshghalSubmissions() {
