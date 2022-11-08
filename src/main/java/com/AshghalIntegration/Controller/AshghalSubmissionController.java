@@ -17,6 +17,7 @@ public class AshghalSubmissionController {
 	
 	@Autowired
 	private AshghalSubmissionService ashghalSubmissionService;
+
 	
 	@PostMapping("/notify")
 	public GenericResponse getNotification(@RequestBody AshghalSubmissions ashghalSubmissions)
